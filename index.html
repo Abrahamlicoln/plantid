@@ -516,7 +516,7 @@
                     If any specific field is uncertain, use "Not documented" rather than guessing.
                 `;
 
-                const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro-preview-05-06" });
+                const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
                 const result = await model.generateContent([
                     prompt,
                     { inlineData: { data: base64Image, mimeType: "image/jpeg" } }
