@@ -427,7 +427,7 @@
         });
 
         // Initialize Gemini API
-        const genAI = new GoogleGenerativeAI('AIzaSyDh0McQc0b3hxY2jLfuUGYpAXHoAwxF7I4');
+        const genAI = new GoogleGenerativeAI('AIzaSyDc0dh-vuYYdU7MfPFMCbUZV1ReGEwWYxc');
 
         // Global variables
         let stream;
@@ -516,7 +516,7 @@
                     If any specific field is uncertain, use "Not documented" rather than guessing.
                 `;
 
-                const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
+                const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro-preview-05-06" });
                 const result = await model.generateContent([
                     prompt,
                     { inlineData: { data: base64Image, mimeType: "image/jpeg" } }
